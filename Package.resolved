@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Csqlite3",
+        "repositoryURL": "https://github.com/rderik/Csqlite3",
+        "state": {
+          "branch": "master",
+          "revision": "0bdc41ed4a038be74c2eba24dc957aa33d493396",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

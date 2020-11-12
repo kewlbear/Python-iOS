@@ -1,0 +1,4 @@
+module CPython {
+    umbrella header "Python.h"
+    export *
+}
