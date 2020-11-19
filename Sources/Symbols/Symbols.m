@@ -58,6 +58,7 @@ void *getSymbol(const char *name) {
             SYMBOL(PyObject_GetItem),
             SYMBOL(PyDict_Next),
             SYMBOL(PyErr_Fetch),
+            SYMBOL(PyErr_Clear),
         };
     }
 
