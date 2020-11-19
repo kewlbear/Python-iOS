@@ -1,10 +1,9 @@
 import XCTest
-@testable import Symbols
+@testable import Resources
 
 final class PythonTests: XCTestCase {
     func testExample() {
-        let x = _Py_True
-        PyNumber_Add(nil, nil)
+        Init()
     }
 
     static var allTests = [
