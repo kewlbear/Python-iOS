@@ -2,11 +2,11 @@
   "object": {
     "pins": [
       {
-        "package": "Csqlite3",
-        "repositoryURL": "https://github.com/rderik/Csqlite3",
+        "package": "CSqlite3",
+        "repositoryURL": "https://github.com/alloyapple/CSqlite3.git",
         "state": {
           "branch": "master",
-          "revision": "0bdc41ed4a038be74c2eba24dc957aa33d493396",
+          "revision": "fe433d74268135019da44fc79c853d9253ecc615",
           "version": null
         }
       }
