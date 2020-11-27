@@ -63,7 +63,7 @@ void *getSymbol(const char *name) {
     }
 
     void *symbol = [(NSValue *) symbols[[NSString stringWithUTF8String:name]] pointerValue];
-    NSLog(@"%s: %s", __func__, name);
+//    NSLog(@"%s: %s", __func__, name);
     assert(symbol);
     return symbol;
 }

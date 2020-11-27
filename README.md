@@ -10,7 +10,7 @@ This swift package enables you to use python modules in your iOS apps.
 
 ## Usage
 
-Use https://github.com/kewlbear/PythonKit.
+See https://github.com/kewlbear/PythonPlayground.
 
 ## Credits
 

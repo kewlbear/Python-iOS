@@ -27,6 +27,7 @@ import Symbols
 
 public let libURL = Bundle.module.url(forResource: "lib", withExtension: nil)
 
+/// Initialize Python runtime
 public func Init() {
     setenv("PYTHONOPTIMIZE", "1", 1)
     setenv("PYTHONDONTWRITEBYTECODE", "1", 1)
@@ -38,13 +39,19 @@ public func Init() {
            FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].path,
            1)
 
-    setenv("TMP", NSTemporaryDirectory(), 1)
+    SetTMP()
 
     Py_Initialize()
 }
 
+/// Set Python Home to enable finding basic Python modules
 public func SetPythonHome() {
     let pythonHome = Bundle.module.bundleURL.path
     let wHome = Py_DecodeLocale(pythonHome, nil)
     Py_SetPythonHome(wHome)
+}
+
+/// Set directory path for temporary files
+public func SetTMP() {
+    setenv("TMP", NSTemporaryDirectory(), 1)
 }
