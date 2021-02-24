@@ -8,22 +8,28 @@ let package = Package(
     products: [
         .library(
             name: "Python-iOS",
-            targets: ["Symbols", "Python", "BZip2", "SSL", "Crypto", "XZ", "Resources"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/alloyapple/CSqlite3.git", .branch("master")),
+            targets: ["Python", "SSL", "Crypto", "FFI", "PythonSupport"]),
     ],
     targets: [
-        .binaryTarget(name: "Python", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/Python.xcframework.zip", checksum: "7b5b216986a1a81b6d12ae3cab2e8d99ef2cd9e6ad593ed50db48cbb8d68fe0e"),
-        .binaryTarget(name: "BZip2", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/BZip2.xcframework.zip", checksum: "3ef7ea97370492aba685b1dd03fecc7f19e292e28a303abc43e6324b96cd19ff"),
-        .binaryTarget(name: "SSL", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/SSL.xcframework.zip", checksum: "373de27ba1c9cc1f35fe38ba98c43c48de1ccef1bcf5cb31e0f6fdaa0171083a"),
-        .binaryTarget(name: "Crypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/Crypto.xcframework.zip", checksum: "98f7d56117430edfe31e7b19af87745e4738a005156c13a82a05950fe3187f60"),
-        .binaryTarget(name: "XZ", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/XZ.xcframework.zip", checksum: "039fe28d39b6c2217f33cb50032aa8f90673e484e99edf0dbe56be47856f9994"),
-        .target(name: "Resources", dependencies: ["Symbols"], resources: [.copy("lib")]),
-        .target(name: "Symbols", dependencies: ["Python", "BZip2", "SSL", "Crypto", "XZ", "CSqlite3", "Clibz"]),
-        .target(name: "Clibz", linkerSettings: [LinkerSetting.linkedLibrary("z")]),
+        .binaryTarget(name: "Python", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/libpython3.xcframework.zip", checksum: "245c51a97eda854a7b0c7bd507f24d1dfc2efae38f20aceac91fe0fd99a6eebe"),
+        .binaryTarget(name: "SSL", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/libssl.xcframework.zip", checksum: "1fc7dd3e95d5152812bc8d74450fdc45539e4ac53d4008b21b7f0a81d2fc52a9"),
+        .binaryTarget(name: "Crypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/libcrypto.xcframework.zip", checksum: "43948ae2aac97bf80445ad0e38dd943b4f903506802633bd82d8b813da0328bf"),
+        .binaryTarget(name: "FFI", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.1/libffi.xcframework.zip", checksum: "0b028a1068f5f085ba1861b73928b99d14970438639d2531c3f31afe4d0e0e3c"),
+        .target(name: "PythonSupport",
+                dependencies: [
+                    "Python",
+                    "SSL",
+                    "Crypto",
+                    "FFI",
+                ],
+                resources: [.copy("lib")],
+                linkerSettings: [
+                    .linkedLibrary("z"),
+                    .linkedLibrary("sqlite3"),
+                ]
+        ),
         .testTarget(
             name: "PythonTests",
-            dependencies: ["Resources"]),
+            dependencies: ["PythonSupport"]),
     ]
 )

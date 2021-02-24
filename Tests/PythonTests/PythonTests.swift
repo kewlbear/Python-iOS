@@ -1,9 +1,9 @@
 import XCTest
-@testable import Resources
+@testable import PythonSupport
 
 final class PythonTests: XCTestCase {
     func testExample() {
-        Init()
+//        Init()
     }
 
     static var allTests = [
