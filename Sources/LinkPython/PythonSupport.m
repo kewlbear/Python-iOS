@@ -22,10 +22,15 @@
 //  THE SOFTWARE.
 //
 
-#import <Python.h>
-#include <dlfcn.h>
-
 #import "PythonSupport.h"
+
+void Py_Initialize(void);
+void *PyMem_RawMalloc(size_t);
+wchar_t *Py_DecodeLocale(const char *, size_t *);
+void PySys_SetArgv(int, wchar_t **);
+void PyEval_InitThreads(void);
+int PyRun_SimpleString(const char *);
+void Py_Finalize(void);
 
 int PythonInitialize(int argc, const char **argv, const char *custom_builtin_importer)
 {
