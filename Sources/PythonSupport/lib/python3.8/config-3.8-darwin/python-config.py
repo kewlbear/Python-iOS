@@ -1,4 +1,4 @@
-#!/Users/anchangbeom/Projects/Public/kivy-ios/dist/root/python3/bin/python3.8
+#!/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/root/python3/bin/python3.8
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in

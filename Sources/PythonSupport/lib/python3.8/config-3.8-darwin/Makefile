@@ -30,15 +30,15 @@ MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	3.8
 srcdir=		.
 
-abs_srcdir=	/Users/anchangbeom/Projects/Public/kivy-ios/build/python3/x86_64/Python-3.8.2
-abs_builddir=	/Users/anchangbeom/Projects/Public/kivy-ios/build/python3/x86_64/Python-3.8.2
+abs_srcdir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.8.2
+abs_builddir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.8.2
 
 
-CC=		/var/folders/yv/5c6zzgq93zz0zl49m8hvmdh00000gn/T/tmpx7so9jeb
-CXX=		/var/folders/yv/5c6zzgq93zz0zl49m8hvmdh00000gn/T/tmp0cjk0pya
+CC=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpjilj92k9
+CXX=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmp2r2m_yhe
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
-AR=		/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
+AR=		/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 READELF=	:
 SOABI=		cpython-38-darwin
 LDVERSION=	$(VERSION)$(ABIFLAGS)
@@ -65,7 +65,7 @@ SHELL=		/bin/sh
 LN=		ln
 
 # Portable install script (configure doesn't always guess right)
-INSTALL=	/usr/local/bin/ginstall -c
+INSTALL=	/usr/bin/install -c
 INSTALL_PROGRAM=${INSTALL}
 INSTALL_SCRIPT= ${INSTALL}
 INSTALL_DATA=	${INSTALL} -m 644
@@ -73,7 +73,7 @@ INSTALL_DATA=	${INSTALL} -m 644
 # rather than figuring out exactly which, we always give them executable mode.
 INSTALL_SHARED= ${INSTALL} -m 755
 
-MKDIR_P=	/usr/local/bin/gmkdir -p
+MKDIR_P=	./install-sh -c -d
 
 MAKESETUP=      $(srcdir)/Modules/makesetup
 
@@ -81,7 +81,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare -Wunreachable-code
 BASECPPFLAGS=	
-CONFIGURE_CFLAGS=	-O3 -miphonesimulator-version-min=8.0 -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/ffi -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/openssl -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk
+CONFIGURE_CFLAGS=	-O3 -miphonesimulator-version-min=8.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -91,7 +91,7 @@ CONFIGURE_CFLAGS_NODIST= -Wextra -Wno-unused-result -Wno-unused-parameter -Wno-m
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=
 CONFIGURE_CPPFLAGS=	
-CONFIGURE_LDFLAGS=	-arch x86_64 -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-arm64_x86_64-simulator -undefined dynamic_lookup
+CONFIGURE_LDFLAGS=	-arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-x86_64-simulator -undefined dynamic_lookup
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -130,7 +130,7 @@ MULTIARCH=	darwin
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"darwin\"
 
 # Install prefix for architecture-independent files
-prefix=		/Users/anchangbeom/Projects/Public/kivy-ios/dist/root/python3
+prefix=		/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/root/python3
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -204,7 +204,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 'CC=/var/folders/yv/5c6zzgq93zz0zl49m8hvmdh00000gn/T/tmpx7so9jeb' 'LD=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld' 'CFLAGS=-O3 -miphonesimulator-version-min=8.0 -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/ffi -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64/openssl -I/Users/anchangbeom/Projects/Public/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk' 'LDFLAGS=-arch x86_64 -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/lib -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/anchangbeom/Projects/Public/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-arm64_x86_64-simulator -undefined dynamic_lookup' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' 'ac_cv_little_endian_double=yes' 'ac_cv_func_memrchr=no' 'ac_cv_func_getentropy=no' 'ac_cv_func_getresuid=no' 'ac_cv_func_getresgid=no' 'ac_cv_func_setresgid=no' 'ac_cv_func_setresuid=no' 'ac_cv_func_plock=no' 'ac_cv_func_dup3=no' 'ac_cv_func_pipe2=no' 'ac_cv_func_preadv=no' 'ac_cv_func_pwritev=no' 'ac_cv_func_preadv2=no' 'ac_cv_func_pwritev2=no' 'ac_cv_func_mkfifoat=no' 'ac_cv_func_mknodat=no' 'ac_cv_func_posix_fadvise=no' 'ac_cv_func_posix_fallocate=no' 'ac_cv_func_sigwaitinfo=no' 'ac_cv_func_sigtimedwait=no' 'ac_cv_func_clock_settime=no' 'ac_cv_func_pthread_getcpuclockid=no' 'ac_cv_func_sched_setscheduler=no' 'ac_cv_func_sched_setparam=no' 'ac_cv_func_clock_gettime=no' '--host=x86_64-apple-ios' '--build=x86_64-apple-darwin' '--prefix=/Users/anchangbeom/Projects/Public/kivy-ios/dist/root/python3' '--without-ensurepip' '--with-system-ffi' '--enable-ipv6' 'PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/anchangbeom/Projects/Public/kivy-ios/dist/hostpython3/bin/python' 'build_alias=x86_64-apple-darwin' 'host_alias=x86_64-apple-ios'
+CONFIG_ARGS=	 'CC=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpjilj92k9' 'LD=/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld' 'CFLAGS=-O3 -miphonesimulator-version-min=8.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk' 'LDFLAGS=-arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-x86_64-simulator -undefined dynamic_lookup' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' 'ac_cv_little_endian_double=yes' 'ac_cv_func_memrchr=no' 'ac_cv_func_getentropy=no' 'ac_cv_func_getresuid=no' 'ac_cv_func_getresgid=no' 'ac_cv_func_setresgid=no' 'ac_cv_func_setresuid=no' 'ac_cv_func_plock=no' 'ac_cv_func_dup3=no' 'ac_cv_func_pipe2=no' 'ac_cv_func_preadv=no' 'ac_cv_func_pwritev=no' 'ac_cv_func_preadv2=no' 'ac_cv_func_pwritev2=no' 'ac_cv_func_mkfifoat=no' 'ac_cv_func_mknodat=no' 'ac_cv_func_posix_fadvise=no' 'ac_cv_func_posix_fallocate=no' 'ac_cv_func_sigwaitinfo=no' 'ac_cv_func_sigtimedwait=no' 'ac_cv_func_clock_settime=no' 'ac_cv_func_pthread_getcpuclockid=no' 'ac_cv_func_sched_setscheduler=no' 'ac_cv_func_sched_setparam=no' 'ac_cv_func_clock_gettime=no' '--host=x86_64-apple-ios' '--build=x86_64-apple-darwin' '--prefix=/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/root/python3' '--without-ensurepip' '--with-system-ffi' '--enable-ipv6' 'PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/hostpython3/bin/python' 'build_alias=x86_64-apple-darwin' 'host_alias=x86_64-apple-ios'
 
 
 # Subdirectories with code
@@ -246,7 +246,7 @@ BUILDPYTHON=	python$(BUILDEXE)
 
 PYTHON_FOR_REGEN=python3.8
 UPDATE_FILE=python3.8 $(srcdir)/Tools/scripts/update_file.py
-PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/anchangbeom/Projects/Public/kivy-ios/dist/hostpython3/bin/python
+PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/hostpython3/bin/python
 _PYTHON_HOST_PLATFORM=ios-x86_64
 BUILD_GNU_TYPE=	x86_64-apple-darwin
 HOST_GNU_TYPE=	x86_64-apple-ios
@@ -281,7 +281,6 @@ DESTLIB=$(LIBDEST)
 _sqlite3 -I$(srcdir)/Modules/_sqlite -DMODULE_NAME='"sqlite3"' _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c
 
 
-
 ##########################################################################
 # Modules
 MODULE_OBJS=	\
@@ -303,7 +302,7 @@ IO_OBJS=	\
 
 ##########################################################################
 
-LIBFFI_INCLUDEDIR=	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi
+LIBFFI_INCLUDEDIR=	/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/ffi
 
 ##########################################################################
 # Parser
