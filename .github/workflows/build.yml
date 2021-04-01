@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches: [ kivy-ios ]
+  pull_request:
+    branches: [ kivy-ios ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: sh Scripts/toolchain.sh
