@@ -5,16 +5,18 @@ This swift package enables you to use python modules in your iOS apps.
 ## Installation
 
 ```
-.package(url: "https://github.com/kewlbear/Python-iOS.git", from: "0.0.1")
+.package(url: "https://github.com/kewlbear/Python-iOS.git", .branch("kivy-ios"))
 ```
 
 ## Usage
 
-See https://github.com/kewlbear/PythonPlayground.
+```
+import PythonSupport
 
-## Credits
+PythonSupport.initialize()
+```
 
-This package uses pre-built version of Python downloaded from https://github.com/beeware/Python-Apple-support.
+If you want to build XCFrameworks yourself, see https://github.com/kewlbear/kivy-ios.
 
 ## License
 
