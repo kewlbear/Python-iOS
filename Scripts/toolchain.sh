@@ -8,3 +8,8 @@ pip install -e .
 pip install cython
 
 python toolchain.py build python3
+
+mv dist/frameworks/lib* .
+
+rm -rf ../Sources/PythonSupport/lib
+mv dist/root/python3/lib ../Sources/PythonSupport

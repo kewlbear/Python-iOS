@@ -13,4 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: sh Scripts/toolchain.sh
+    - run: sh Scripts/ci.sh
+      id: script
+    - name: Release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "${{ steps.script.outputs.tag }}"
+        files: 'kivy-ios/*.xcframework.zip'
