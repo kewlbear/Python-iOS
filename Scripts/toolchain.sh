@@ -10,6 +10,7 @@ pip install cython
 python toolchain.py build python3
 
 mv dist/frameworks/lib* .
+mv libpython3.xcframework dist/frameworks
 
 rm -rf ../Sources/PythonSupport/lib
 mv dist/root/python3/lib ../Sources/PythonSupport
