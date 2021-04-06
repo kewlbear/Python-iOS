@@ -26,10 +26,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-int PythonInitialize(int argc, const char **argv, const char *);
+int PythonInitialize(int, const char **, const char *);
 
 void PythonFinalize();
 
 void PythonRunSimpleString(const char *);
+
+void *PyGILState_Ensure(void);
+
+void PyGILState_Release(void *);
+
+void *PyEval_SaveThread();
+
+void PyEval_RestoreThread(void *);
 
 NS_ASSUME_NONNULL_END
