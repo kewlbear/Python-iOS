@@ -9,6 +9,17 @@ pip install cython
 
 python toolchain.py build python3
 
+for f in dist/frameworks/*.xcframework
+do
+	otool -l $f/ios-arm64/lib*.a | grep __LLVM >/dev/null
+	if [ $? ]
+	then
+		echo "$(basename $f) contains bitcode"
+	else
+		echo "$(basename $f) does NOT contain bitcode"
+	fi
+done
+
 mv dist/frameworks/lib* .
 mv libpython3.xcframework dist/frameworks
 
