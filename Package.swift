@@ -15,10 +15,10 @@ let package = Package(
             ]),
     ],
     targets: [
-        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412020327/libpython3.xcframework.zip", checksum: "libpython3.xcframework_CHECKSUM"),
-        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412020327/libssl.xcframework.zip", checksum: "df00482bf994175029a702d0c9aac5e2d1559ae7e4901f2ae90ff05216c0764e"),
-        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412020327/libcrypto.xcframework.zip", checksum: "7e66406160a56f1d59fae696f2250f0ac38b2477d19fcf5b3d7932a4321d2fbd"),
-        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412020327/libffi.xcframework.zip", checksum: "1cbfab8c51a4dd4a6b63baa37c3d864e0e211f2be8d6306d682202fab6d9d20c"),
+        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412033529/libpython3.xcframework.zip", checksum: "a6385eb42b2e85b58f0b01f932ebcae741044d793a0874894072a33920d3c360"),
+        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412033529/libssl.xcframework.zip", checksum: "213e394771d2ec0e01543a2aa0c188371075656837050386dfa9530f544a1654"),
+        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412033529/libcrypto.xcframework.zip", checksum: "ef8ae0ef909040b0fe56e598de58c51fb29e7fbab8b1c0a321603917d0193564"),
+        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/0.0.20210412033529/libffi.xcframework.zip", checksum: "dbce43444de4012e36551704a29f88e50756efa5825207b9dc4414d7f266c7c3"),
         .target(name: "LinkPython",
                 dependencies: [
                     "libpython3",
