@@ -24,6 +24,16 @@
 
 #import <Foundation/Foundation.h>
 
+#define ForceLink(package, body) \
+@interface ForceLink##package : NSObject \
+@end \
+\
+@implementation ForceLink##package \
+- (void)foo { \
+    body; \
+} \
+@end
+
 NS_ASSUME_NONNULL_BEGIN
 
 int PythonInitialize(int, const char **, const char *);

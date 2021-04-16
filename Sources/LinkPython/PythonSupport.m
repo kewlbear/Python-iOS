@@ -32,6 +32,9 @@ void PyEval_InitThreads(void);
 int PyRun_SimpleString(const char *);
 void Py_Finalize(void);
 
+void Py_IncRef(void *);
+void Py_DecRef(void *);
+
 int PythonInitialize(int argc, const char **argv, const char *custom_builtin_importer)
 {
     int ret = 0;
@@ -61,3 +64,5 @@ void PythonRunSimpleString(const char *string)
 {
     PyRun_SimpleString(string);
 }
+
+ForceLink(Python, Py_IncRef(nil); Py_DecRef(nil))
