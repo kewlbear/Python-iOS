@@ -101,7 +101,7 @@ public func initialize() {
     let pythonHome = Bundle.module.bundleURL.path
     setenv("PYTHONHOME", pythonHome, 1)
 
-    setenv("PYTHONPATH", "\(pythonHome)/lib/python3.8/:\(pythonHome)/lib/python3.8/site-packages", 1)
+    setenv("PYTHONPATH", "\(pythonHome)/lib/python3.9/:\(pythonHome)/lib/python3.9/site-packages", 1)
 
     setenv("TMP", NSTemporaryDirectory(), 1)
 
