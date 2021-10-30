@@ -21,26 +21,26 @@
 
 # === Variables set by makesetup ===
 
-MODBUILT_NAMES=      _asyncio  _bisect  _blake2  _codecs_cn  _codecs_hk  _codecs_iso2022  _codecs_jp  _codecs_kr  _codecs_tw  _contextvars  _crypt  _csv  _datetime  _elementtree   _hashlib  _heapq  _json  _lsprof  _md5  _multibytecodec  _opcode  _queue  _pickle  _random  _sha1  _sha3  _sha256  _sha512  _socket  _ssl  _struct  array  audioop  binascii  cmath  fcntl  grp  math  parser  pyexpat  resource  select  syslog  termios  unicodedata  zlib  _ctypes_test  _testbuffer  _testinternalcapi  _testimportmultiple  _ctypes  posix  errno  pwd  _sre  _codecs  _weakref  _functools  _operator  _collections  _abc  itertools  atexit  _signal  _stat  time  _thread  _locale  _io  faulthandler  _tracemalloc  _symtable  xxsubtype
+MODBUILT_NAMES=      _asyncio  _bisect  _blake2  _codecs_cn  _codecs_hk  _codecs_iso2022  _codecs_jp  _codecs_kr  _codecs_tw  _contextvars  _crypt  _csv  _datetime  _elementtree   _hashlib  _heapq  _json  _lsprof  _md5  _multibytecodec  _opcode  _queue  _pickle  _random  _sha1  _sha3  _sha256  _sha512  _socket  _ssl  _struct  array  audioop  binascii  cmath  fcntl  grp  math  parser  pyexpat  resource  select  syslog  termios  unicodedata  zlib  _ctypes_test  _testbuffer  _testinternalcapi  _testimportmultiple  _ctypes  posix  errno  pwd  _sre  _codecs  _weakref  _functools  _operator  _collections  _abc  itertools  atexit  _signal  _stat  time  _thread  _locale  _io  faulthandler  _tracemalloc  _peg_parser  _symtable  xxsubtype
 MODDISABLED_NAMES= 
-MODOBJS=             Modules/_asynciomodule.o  Modules/_bisectmodule.o  Modules/blake2module.o Modules/blake2b_impl.o Modules/blake2s_impl.o  Modules/_codecs_cn.o  Modules/_codecs_hk.o  Modules/_codecs_iso2022.o  Modules/_codecs_jp.o  Modules/_codecs_kr.o  Modules/_codecs_tw.o  Modules/_contextvarsmodule.o  Modules/_cryptmodule.o  Modules/_csv.o  Modules/_datetimemodule.o  Modules/_elementtree.o   Modules/_hashopenssl.o  Modules/_heapqmodule.o  Modules/_json.o  Modules/_lsprof.o Modules/rotatingtree.o  Modules/md5module.o  Modules/multibytecodec.o  Modules/_opcode.o  Modules/_queuemodule.o  Modules/_pickle.o  Modules/_randommodule.o  Modules/sha1module.o  Modules/sha3module.o  Modules/sha256module.o  Modules/sha512module.o  Modules/socketmodule.o  Modules/_ssl.o  Modules/_struct.o  Modules/arraymodule.o  Modules/audioop.o  Modules/binascii.o  Modules/cmathmodule.o Modules/_math.o  Modules/fcntlmodule.o  Modules/grpmodule.o  Modules/mathmodule.o  Modules/parsermodule.o  Modules/xmlparse.o Modules/xmlrole.o Modules/xmltok.o Modules/pyexpat.o  Modules/resource.o  Modules/selectmodule.o  Modules/syslogmodule.o  Modules/termios.o  Modules/unicodedata.o  Modules/zlibmodule.o  Modules/_ctypes_test.o  Modules/_testbuffer.o  Modules/_testinternalcapi.o  Modules/_testimportmultiple.o  Modules/_ctypes.o Modules/callbacks.o Modules/callproc.o Modules/stgdict.o Modules/cfield.o  Modules/posixmodule.o  Modules/errnomodule.o  Modules/pwdmodule.o  Modules/_sre.o  Modules/_codecsmodule.o  Modules/_weakref.o  Modules/_functoolsmodule.o  Modules/_operator.o  Modules/_collectionsmodule.o  Modules/_abc.o  Modules/itertoolsmodule.o  Modules/atexitmodule.o  Modules/signalmodule.o  Modules/_stat.o  Modules/timemodule.o  Modules/_threadmodule.o  Modules/_localemodule.o  Modules/_iomodule.o Modules/iobase.o Modules/fileio.o Modules/bytesio.o Modules/bufferedio.o Modules/textio.o Modules/stringio.o  Modules/faulthandler.o  Modules/_tracemalloc.o Modules/hashtable.o  Modules/symtablemodule.o  Modules/xxsubtype.o
+MODOBJS=             Modules/_asynciomodule.o  Modules/_bisectmodule.o  Modules/blake2module.o Modules/blake2b_impl.o Modules/blake2s_impl.o  Modules/_codecs_cn.o  Modules/_codecs_hk.o  Modules/_codecs_iso2022.o  Modules/_codecs_jp.o  Modules/_codecs_kr.o  Modules/_codecs_tw.o  Modules/_contextvarsmodule.o  Modules/_cryptmodule.o  Modules/_csv.o  Modules/_datetimemodule.o  Modules/_elementtree.o   Modules/_hashopenssl.o  Modules/_heapqmodule.o  Modules/_json.o  Modules/_lsprof.o Modules/rotatingtree.o  Modules/md5module.o  Modules/multibytecodec.o  Modules/_opcode.o  Modules/_queuemodule.o  Modules/_pickle.o  Modules/_randommodule.o  Modules/sha1module.o  Modules/sha3module.o  Modules/sha256module.o  Modules/sha512module.o  Modules/socketmodule.o  Modules/_ssl.o  Modules/_struct.o  Modules/arraymodule.o  Modules/audioop.o  Modules/binascii.o  Modules/cmathmodule.o Modules/_math.o  Modules/fcntlmodule.o  Modules/grpmodule.o  Modules/mathmodule.o  Modules/parsermodule.o  Modules/xmlparse.o Modules/xmlrole.o Modules/xmltok.o Modules/pyexpat.o  Modules/resource.o  Modules/selectmodule.o  Modules/syslogmodule.o  Modules/termios.o  Modules/unicodedata.o  Modules/zlibmodule.o  Modules/_ctypes_test.o  Modules/_testbuffer.o  Modules/_testinternalcapi.o  Modules/_testimportmultiple.o  Modules/_ctypes.o Modules/callbacks.o Modules/callproc.o Modules/stgdict.o Modules/cfield.o  Modules/posixmodule.o  Modules/errnomodule.o  Modules/pwdmodule.o  Modules/_sre.o  Modules/_codecsmodule.o  Modules/_weakref.o  Modules/_functoolsmodule.o  Modules/_operator.o  Modules/_collectionsmodule.o  Modules/_abc.o  Modules/itertoolsmodule.o  Modules/atexitmodule.o  Modules/signalmodule.o  Modules/_stat.o  Modules/timemodule.o  Modules/_threadmodule.o  Modules/_localemodule.o  Modules/_iomodule.o Modules/iobase.o Modules/fileio.o Modules/bytesio.o Modules/bufferedio.o Modules/textio.o Modules/stringio.o  Modules/faulthandler.o  Modules/_tracemalloc.o  Modules/_peg_parser.o  Modules/symtablemodule.o  Modules/xxsubtype.o
 MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 
 # === Variables set by configure
-VERSION=	3.8
+VERSION=	3.9
 srcdir=		.
 
-abs_srcdir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.8.2
-abs_builddir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.8.2
+abs_srcdir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.9.2
+abs_builddir=	/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/build/python3/x86_64/Python-3.9.2
 
 
-CC=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpul4bywos
-CXX=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpr6bnsjt1
+CC=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpwor0y85i
+CXX=		/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmps53h0zog
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 READELF=	:
-SOABI=		cpython-38-darwin
+SOABI=		cpython-39-darwin
 LDVERSION=	$(VERSION)$(ABIFLAGS)
 LIBPYTHON=	
 GITVERSION=	
@@ -81,17 +81,17 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare -Wunreachable-code
 BASECPPFLAGS=	
-CONFIGURE_CFLAGS=	-O3 -miphonesimulator-version-min=8.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk
+CONFIGURE_CFLAGS=	-O3 -miphonesimulator-version-min=9.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
-CONFIGURE_CFLAGS_NODIST= -Wextra -Wno-unused-result -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration
+CONFIGURE_CFLAGS_NODIST= -Wextra -Wno-unused-result -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden
 # LDFLAGS_NODIST is used in the same manner as CFLAGS_NODIST.
 # Use it when a linker flag should _not_ be part of the distutils LDFLAGS
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=
 CONFIGURE_CPPFLAGS=	
-CONFIGURE_LDFLAGS=	-arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-arm64_x86_64-simulator -undefined dynamic_lookup
+CONFIGURE_LDFLAGS=	-L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.9.xcframework/ios-arm64_x86_64-simulator -arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=9.0 -undefined dynamic_lookup
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -144,7 +144,8 @@ LIBDIR=		${exec_prefix}/lib
 MANDIR=		${datarootdir}/man
 INCLUDEDIR=	${prefix}/include
 CONFINCLUDEDIR=	$(exec_prefix)/include
-SCRIPTDIR=	$(prefix)/lib
+PLATLIBDIR=	lib
+SCRIPTDIR=	$(prefix)/$(PLATLIBDIR)
 ABIFLAGS=	
 
 # Detailed destination directories
@@ -155,11 +156,15 @@ CONFINCLUDEPY=	$(CONFINCLUDEDIR)/python$(LDVERSION)
 
 # Symbols used for using shared libraries
 SHLIB_SUFFIX=	.so
-EXT_SUFFIX=	.so
+EXT_SUFFIX=	.cpython-39-darwin.so
 LDSHARED=	ld $(PY_LDFLAGS)
 BLDSHARED=	ld $(PY_CORE_LDFLAGS)
 LDCXXSHARED=	ld
 DESTSHARED=	$(BINLIBDEST)/lib-dynload
+
+# List of exported symbols for AIX
+EXPORTSYMS=	
+EXPORTSFROM=	
 
 # Executable suffix (.exe on Windows and Mac OS X)
 EXE=		
@@ -197,6 +202,9 @@ OPENSSL_INCLUDES=
 OPENSSL_LIBS=
 OPENSSL_LDFLAGS=
 
+# Default zoneinfo.TZPATH. Added here to expose it in sysconfig.get_config_var
+TZPATH=/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo
+
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.
 DIRMODE=	755
@@ -204,11 +212,11 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 'CC=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpul4bywos' 'LD=/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld' 'CFLAGS=-O3 -miphonesimulator-version-min=8.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk' 'LDFLAGS=-arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=8.0 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.8.xcframework/ios-arm64_x86_64-simulator -undefined dynamic_lookup' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' 'ac_cv_little_endian_double=yes' 'ac_cv_func_memrchr=no' 'ac_cv_func_getentropy=no' 'ac_cv_func_getresuid=no' 'ac_cv_func_getresgid=no' 'ac_cv_func_setresgid=no' 'ac_cv_func_setresuid=no' 'ac_cv_func_plock=no' 'ac_cv_func_dup3=no' 'ac_cv_func_pipe2=no' 'ac_cv_func_preadv=no' 'ac_cv_func_pwritev=no' 'ac_cv_func_preadv2=no' 'ac_cv_func_pwritev2=no' 'ac_cv_func_mkfifoat=no' 'ac_cv_func_mknodat=no' 'ac_cv_func_posix_fadvise=no' 'ac_cv_func_posix_fallocate=no' 'ac_cv_func_sigwaitinfo=no' 'ac_cv_func_sigtimedwait=no' 'ac_cv_func_clock_settime=no' 'ac_cv_func_pthread_getcpuclockid=no' 'ac_cv_func_sched_setscheduler=no' 'ac_cv_func_sched_setparam=no' 'ac_cv_func_clock_gettime=no' '--host=x86_64-apple-ios' '--build=x86_64-apple-darwin' '--prefix=/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/root/python3' '--without-ensurepip' '--with-system-ffi' '--enable-ipv6' 'PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/hostpython3/bin/python' 'build_alias=x86_64-apple-darwin' 'host_alias=x86_64-apple-ios'
+CONFIG_ARGS=	 'CC=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpwor0y85i' 'LD=/Applications/Xcode_12.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld' 'CFLAGS=-O3 -miphonesimulator-version-min=9.0 -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/hostlibffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/ffi -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64/openssl -I/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/include/x86_64 --sysroot=/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk' 'LDFLAGS=-L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libffi.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libssl.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libcrypto.xcframework/ios-arm64_x86_64-simulator -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/frameworks/libpython3.9.xcframework/ios-arm64_x86_64-simulator -arch x86_64 -L/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/lib -L/Applications/Xcode_12.4.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/lib -miphonesimulator-version-min=9.0 -undefined dynamic_lookup' 'ac_cv_file__dev_ptmx=yes' 'ac_cv_file__dev_ptc=no' 'ac_cv_little_endian_double=yes' 'ac_cv_func_memrchr=no' 'ac_cv_func_getentropy=no' 'ac_cv_func_getresuid=no' 'ac_cv_func_getresgid=no' 'ac_cv_func_setresgid=no' 'ac_cv_func_setresuid=no' 'ac_cv_func_plock=no' 'ac_cv_func_dup3=no' 'ac_cv_func_pipe2=no' 'ac_cv_func_preadv=no' 'ac_cv_func_pwritev=no' 'ac_cv_func_preadv2=no' 'ac_cv_func_pwritev2=no' 'ac_cv_func_mkfifoat=no' 'ac_cv_func_mknodat=no' 'ac_cv_func_posix_fadvise=no' 'ac_cv_func_posix_fallocate=no' 'ac_cv_func_sigwaitinfo=no' 'ac_cv_func_sigtimedwait=no' 'ac_cv_func_clock_settime=no' 'ac_cv_func_pthread_getcpuclockid=no' 'ac_cv_func_sched_setscheduler=no' 'ac_cv_func_sched_setparam=no' 'ac_cv_func_clock_gettime=no' 'ac_cv_func_rtpSpawn=no' 'ac_cv_func_fdwalk=no' 'ac_cv_func_futimesat=no' 'ac_cv_func_copy_file_range=no' 'ac_cv_func_fexecve=no' 'ac_cv_func_execve=no' 'ac_cv_func_sched_rr_get_interval=no' 'ac_cv_func_explicit_bzero=no' 'ac_cv_func_explicit_memset=no' '--host=x86_64-apple-ios' '--build=x86_64-apple-darwin' '--prefix=/Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/root/python3' '--without-ensurepip' '--with-system-ffi' '--enable-ipv6' 'PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/hostpython3/bin/python' 'build_alias=x86_64-apple-darwin' 'host_alias=x86_64-apple-ios'
 
 
 # Subdirectories with code
-SRCDIRS= 	Parser Objects Python Modules Modules/_io Programs
+SRCDIRS= 	Parser Parser/pegen Objects Python Modules Modules/_io Programs
 
 # Other subdirectories
 SUBDIRSTOO=	Include Lib Misc
@@ -244,8 +252,8 @@ LIBOBJS=
 PYTHON=		python$(EXE)
 BUILDPYTHON=	python$(BUILDEXE)
 
-PYTHON_FOR_REGEN=python3.8
-UPDATE_FILE=python3.8 $(srcdir)/Tools/scripts/update_file.py
+PYTHON_FOR_REGEN?=python3.9
+UPDATE_FILE=python3.9 $(srcdir)/Tools/scripts/update_file.py
 PYTHON_FOR_BUILD=_PYTHON_PROJECT_BASE=$(abs_builddir)                     _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM)                     PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib                    _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH)                    /Users/runner/work/Python-iOS/Python-iOS/kivy-ios/dist/hostpython3/bin/python
 _PYTHON_HOST_PLATFORM=ios-x86_64
 BUILD_GNU_TYPE=	x86_64-apple-darwin
@@ -269,7 +277,7 @@ COVERAGE_REPORT_OPTIONS=--no-branch-coverage --title "CPython lcov report"
 
 # === Definitions added by makesetup ===
 
-LOCALMODLIBS=                 -lssl                -lssl                 -lz                           
+LOCALMODLIBS=                 -lssl                -lssl                 -lz                            
 BASEMODLIBS=
 PYTHONPATH=$(COREPYTHONPATH)
 COREPYTHONPATH=$(DESTPATH)$(SITEPATH)$(TESTPATH)
@@ -306,6 +314,19 @@ LIBFFI_INCLUDEDIR=	/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/
 
 ##########################################################################
 # Parser
+
+PEGEN_OBJS=		\
+		Parser/pegen/pegen.o \
+		Parser/pegen/parse.o \
+		Parser/pegen/parse_string.o \
+		Parser/pegen/peg_api.o
+
+
+PEGEN_HEADERS= \
+		$(srcdir)/Include/internal/pegen_interface.h \
+		$(srcdir)/Parser/pegen/pegen.h \
+		$(srcdir)/Parser/pegen/parse_string.h
+
 POBJS=		\
 		Parser/acceler.o \
 		Parser/grammar1.o \
@@ -314,9 +335,10 @@ POBJS=		\
 		Parser/parser.o \
 		Parser/token.o \
 
-PARSER_OBJS=	$(POBJS) Parser/myreadline.o Parser/parsetok.o Parser/tokenizer.o
+PARSER_OBJS=	$(POBJS) $(PEGEN_OBJS) Parser/myreadline.o Parser/parsetok.o Parser/tokenizer.o
 
 PARSER_HEADERS= \
+		$(PEGEN_HEADERS) \
 		$(srcdir)/Include/grammar.h \
 		$(srcdir)/Include/parsetok.h \
 		$(srcdir)/Parser/parser.h \
@@ -348,6 +370,7 @@ PYTHON_OBJS=	\
 		Python/getversion.o \
 		Python/graminit.o \
 		Python/hamt.o \
+		Python/hashtable.o \
 		Python/import.o \
 		Python/importdl.o \
 		Python/initconfig.o \
@@ -404,6 +427,7 @@ OBJECT_OBJS=	\
 		Objects/descrobject.o \
 		Objects/enumobject.o \
 		Objects/exceptions.o \
+		Objects/genericaliasobject.o \
 		Objects/genobject.o \
 		Objects/fileobject.o \
 		Objects/floatobject.o \
@@ -473,7 +497,7 @@ check-clean-src:
 
 # Profile generation build must start from a clean tree.
 profile-clean-stamp:
-	$(MAKE) clean profile-removal
+	$(MAKE) clean
 	touch $@
 
 # Compile with profile generation enabled.
@@ -497,7 +521,7 @@ profile-run-stamp:
 	$(MAKE) run_profile_task
 	$(MAKE) build_all_merge_profile
 	# Remove profile generation binary since we are done with it.
-	$(MAKE) clean
+	$(MAKE) clean-retain-profile
 	# This is an expensive target to build and it does not have proper
 	# makefile dependency information.  So, we create a "stamp" file
 	# to record its completion and avoid re-running it.
@@ -524,8 +548,8 @@ profile-opt: profile-run-stamp
 .PHONY=coverage coverage-lcov coverage-report
 coverage:
 	@echo "Building with support for coverage checking:"
-	$(MAKE) clean profile-removal
-	$(MAKE) all CFLAGS="$(CFLAGS) -O0 -pg -fprofile-arcs -ftest-coverage" LIBS="$(LIBS) -lgcov"
+	$(MAKE) clean
+	$(MAKE) all CFLAGS="$(CFLAGS) -O0 -pg --coverage" LIBS="$(LIBS) --coverage"
 
 coverage-lcov:
 	@echo "Creating Coverage HTML report with LCOV:"
@@ -574,7 +598,7 @@ clinic: check-clean-src $(srcdir)/Modules/_blake2/blake2s_impl.c
 	$(PYTHON_FOR_REGEN) $(srcdir)/Tools/clinic/clinic.py --make --srcdir $(srcdir)
 
 # Build the interpreter
-$(BUILDPYTHON):	Programs/python.o $(LIBRARY) $(LDLIBRARY) $(PY3LIBRARY)
+$(BUILDPYTHON):	Programs/python.o $(LIBRARY) $(LDLIBRARY) $(PY3LIBRARY) $(EXPORTSYMS)
 	$(LINKCC) $(PY_CORE_LDFLAGS) $(LINKFORSHARED) -o $@ Programs/python.o $(BLDLIBRARY) $(LIBS) $(MODLIBS) $(SYSLIBS)
 
 platform: $(BUILDPYTHON) pybuilddir.txt
@@ -646,6 +670,10 @@ libpython$(LDVERSION).dylib: $(LIBRARY_OBJS)
 libpython$(VERSION).sl: $(LIBRARY_OBJS)
 	$(LDSHARED) -o $@ $(LIBRARY_OBJS) $(MODLIBS) $(SHLIBS) $(LIBC) $(LIBM)
 
+# List of exported symbols for AIX
+Modules/python.exp: $(LIBRARY)
+	$(srcdir)/Modules/makexp_aix $@ "$(EXPORTSFROM)" $?
+
 # Copy up the gdb python hooks into a position where they can be automatically
 # loaded by gdb during Lib/test/test_gdb.py
 #
@@ -705,7 +733,7 @@ Makefile Modules/config.c: Makefile.pre \
 	@echo "The Makefile was updated, you may need to re-run make."
 
 
-Programs/_testembed: Programs/_testembed.o $(LIBRARY) $(LDLIBRARY) $(PY3LIBRARY)
+Programs/_testembed: Programs/_testembed.o $(LIBRARY) $(LDLIBRARY) $(PY3LIBRARY) $(EXPORTSYMS)
 	$(LINKCC) $(PY_CORE_LDFLAGS) $(LINKFORSHARED) -o $@ Programs/_testembed.o $(BLDLIBRARY) $(LIBS) $(MODLIBS) $(SYSLIBS)
 
 ############################################################################
@@ -742,7 +770,8 @@ regen-importlib: Programs/_freeze_importlib
 # Regenerate all generated files
 
 regen-all: regen-opcode regen-opcode-targets regen-typeslots regen-grammar \
-	regen-token regen-keyword regen-symbol regen-ast regen-importlib clinic
+	regen-token regen-keyword regen-symbol regen-ast regen-importlib clinic \
+	regen-pegen-metaparser regen-pegen
 
 ############################################################################
 # Special rules for object files
@@ -800,6 +829,11 @@ Python/sysmodule.o: $(srcdir)/Python/sysmodule.c Makefile $(srcdir)/Include/pydt
 		$(MULTIARCH_CPPFLAGS) \
 		-o $@ $(srcdir)/Python/sysmodule.c
 
+Python/initconfig.o: $(srcdir)/Python/initconfig.c
+	$(CC) -c $(PY_CORE_CFLAGS) \
+		-DPLATLIBDIR='"$(PLATLIBDIR)"' \
+		-o $@ $(srcdir)/Python/initconfig.c
+
 $(IO_OBJS): $(IO_H)
 
 .PHONY: regen-grammar
@@ -814,19 +848,35 @@ regen-grammar: regen-token
 	$(UPDATE_FILE) $(srcdir)/Include/graminit.h $(srcdir)/Include/graminit.h.new
 	$(UPDATE_FILE) $(srcdir)/Python/graminit.c $(srcdir)/Python/graminit.c.new
 
+.PHONY: regen-pegen-metaparser
+regen-pegen-metaparser:
+	@$(MKDIR_P) $(srcdir)/Tools/peg_generator/pegen
+	PYTHONPATH=$(srcdir)/Tools/peg_generator $(PYTHON_FOR_REGEN) -m pegen -q python \
+	$(srcdir)/Tools/peg_generator/pegen/metagrammar.gram \
+	-o $(srcdir)/Tools/peg_generator/pegen/grammar_parser.py.new
+	$(UPDATE_FILE) $(srcdir)/Tools/peg_generator/pegen/grammar_parser.py \
+	$(srcdir)/Tools/peg_generator/pegen/grammar_parser.py.new
+
+.PHONY: regen-pegen
+regen-pegen:
+	@$(MKDIR_P) $(srcdir)/Parser/pegen
+	PYTHONPATH=$(srcdir)/Tools/peg_generator $(PYTHON_FOR_REGEN) -m pegen -q c \
+		$(srcdir)/Grammar/python.gram \
+		$(srcdir)/Grammar/Tokens \
+		-o $(srcdir)/Parser/pegen/parse.new.c
+	$(UPDATE_FILE) $(srcdir)/Parser/pegen/parse.c $(srcdir)/Parser/pegen/parse.new.c
+
 .PHONY=regen-ast
 regen-ast:
-	# Regenerate Include/Python-ast.h using Parser/asdl_c.py -h
+	# Regenerate Include/Python-ast.h and Python/Python-ast.c using Parser/asdl_c.py
 	$(MKDIR_P) $(srcdir)/Include
-	$(PYTHON_FOR_REGEN) $(srcdir)/Parser/asdl_c.py \
-		-h $(srcdir)/Include/Python-ast.h.new \
-		$(srcdir)/Parser/Python.asdl
-	$(UPDATE_FILE) $(srcdir)/Include/Python-ast.h $(srcdir)/Include/Python-ast.h.new
-	# Regenerate Python/Python-ast.c using Parser/asdl_c.py -c
 	$(MKDIR_P) $(srcdir)/Python
 	$(PYTHON_FOR_REGEN) $(srcdir)/Parser/asdl_c.py \
-		-c $(srcdir)/Python/Python-ast.c.new \
-		$(srcdir)/Parser/Python.asdl
+		$(srcdir)/Parser/Python.asdl \
+		-H $(srcdir)/Include/Python-ast.h.new \
+		-C $(srcdir)/Python/Python-ast.c.new
+
+	$(UPDATE_FILE) $(srcdir)/Include/Python-ast.h $(srcdir)/Include/Python-ast.h.new
 	$(UPDATE_FILE) $(srcdir)/Python/Python-ast.c $(srcdir)/Python/Python-ast.c.new
 
 .PHONY: regen-opcode
@@ -863,9 +913,10 @@ regen-token:
 
 .PHONY: regen-keyword
 regen-keyword:
-	# Regenerate Lib/keyword.py from Grammar/Grammar and Grammar/Tokens
-	# using Parser/pgen
-	PYTHONPATH=$(srcdir) $(PYTHON_FOR_REGEN) -m Parser.pgen.keywordgen $(srcdir)/Grammar/Grammar \
+	# Regenerate Lib/keyword.py from Grammar/python.gram and Grammar/Tokens
+	# using Tools/peg_generator/pegen
+	PYTHONPATH=$(srcdir)/Tools/peg_generator $(PYTHON_FOR_REGEN) -m pegen.keywordgen \
+		$(srcdir)/Grammar/python.gram \
 		$(srcdir)/Grammar/Tokens \
 		$(srcdir)/Lib/keyword.py.new
 	$(UPDATE_FILE) $(srcdir)/Lib/keyword.py $(srcdir)/Lib/keyword.py.new
@@ -982,7 +1033,6 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/bltinmodule.h \
 		$(srcdir)/Include/boolobject.h \
 		$(srcdir)/Include/bytearrayobject.h \
-		$(srcdir)/Include/bytes_methods.h \
 		$(srcdir)/Include/bytesobject.h \
 		$(srcdir)/Include/cellobject.h \
 		$(srcdir)/Include/ceval.h \
@@ -994,7 +1044,6 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/context.h \
 		$(srcdir)/Include/descrobject.h \
 		$(srcdir)/Include/dictobject.h \
-		$(srcdir)/Include/dtoa.h \
 		$(srcdir)/Include/dynamic_annotations.h \
 		$(srcdir)/Include/enumobject.h \
 		$(srcdir)/Include/errcode.h \
@@ -1034,6 +1083,7 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/pydtrace.h \
 		$(srcdir)/Include/pyerrors.h \
 		$(srcdir)/Include/pyfpe.h \
+		$(srcdir)/Include/pyframe.h \
 		$(srcdir)/Include/pyhash.h \
 		$(srcdir)/Include/pylifecycle.h \
 		$(srcdir)/Include/pymacconfig.h \
@@ -1069,10 +1119,19 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/Python-ast.h \
 		\
 		$(srcdir)/Include/cpython/abstract.h \
+		$(srcdir)/Include/cpython/bytearrayobject.h \
+		$(srcdir)/Include/cpython/bytesobject.h \
+		$(srcdir)/Include/cpython/ceval.h \
+		$(srcdir)/Include/cpython/code.h \
 		$(srcdir)/Include/cpython/dictobject.h \
 		$(srcdir)/Include/cpython/fileobject.h \
+		$(srcdir)/Include/cpython/fileutils.h \
+		$(srcdir)/Include/cpython/frameobject.h \
+		$(srcdir)/Include/cpython/import.h \
 		$(srcdir)/Include/cpython/initconfig.h \
 		$(srcdir)/Include/cpython/interpreteridobject.h \
+		$(srcdir)/Include/cpython/listobject.h \
+		$(srcdir)/Include/cpython/methodobject.h \
 		$(srcdir)/Include/cpython/object.h \
 		$(srcdir)/Include/cpython/objimpl.h \
 		$(srcdir)/Include/cpython/pyerrors.h \
@@ -1084,17 +1143,25 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/cpython/tupleobject.h \
 		$(srcdir)/Include/cpython/unicodeobject.h \
 		\
+		$(srcdir)/Include/internal/pycore_abstract.h \
 		$(srcdir)/Include/internal/pycore_accu.h \
 		$(srcdir)/Include/internal/pycore_atomic.h \
+		$(srcdir)/Include/internal/pycore_byteswap.h \
+		$(srcdir)/Include/internal/pycore_bytes_methods.h \
+		$(srcdir)/Include/internal/pycore_call.h \
 		$(srcdir)/Include/internal/pycore_ceval.h \
 		$(srcdir)/Include/internal/pycore_code.h \
 		$(srcdir)/Include/internal/pycore_condvar.h \
 		$(srcdir)/Include/internal/pycore_context.h \
+		$(srcdir)/Include/internal/pycore_dtoa.h \
 		$(srcdir)/Include/internal/pycore_fileutils.h \
 		$(srcdir)/Include/internal/pycore_getopt.h \
 		$(srcdir)/Include/internal/pycore_gil.h \
 		$(srcdir)/Include/internal/pycore_hamt.h \
+		$(srcdir)/Include/internal/pycore_hashtable.h \
+		$(srcdir)/Include/internal/pycore_import.h \
 		$(srcdir)/Include/internal/pycore_initconfig.h \
+		$(srcdir)/Include/internal/pycore_interp.h \
 		$(srcdir)/Include/internal/pycore_object.h \
 		$(srcdir)/Include/internal/pycore_pathconfig.h \
 		$(srcdir)/Include/internal/pycore_pyerrors.h \
@@ -1102,6 +1169,8 @@ PYTHON_HEADERS= \
 		$(srcdir)/Include/internal/pycore_pylifecycle.h \
 		$(srcdir)/Include/internal/pycore_pymem.h \
 		$(srcdir)/Include/internal/pycore_pystate.h \
+		$(srcdir)/Include/internal/pycore_runtime.h \
+		$(srcdir)/Include/internal/pycore_sysmodule.h \
 		$(srcdir)/Include/internal/pycore_traceback.h \
 		$(srcdir)/Include/internal/pycore_tupleobject.h \
 		$(srcdir)/Include/internal/pycore_warnings.h \
@@ -1344,6 +1413,7 @@ LIBSUBDIRS=	tkinter tkinter/test tkinter/test/test_tkinter \
 		test/test_import/data/circular_imports/subpkg \
 		test/test_import/data/package \
 		test/test_import/data/package2 \
+		test/test_import/data/unwritable \
 		importlib \
 		importlib/metadata \
 		test/test_importlib \
@@ -1384,6 +1454,7 @@ LIBSUBDIRS=	tkinter tkinter/test tkinter/test/test_tkinter \
 		test/test_importlib/source \
 		test/test_importlib/zipdata01 \
 		test/test_importlib/zipdata02 \
+		test/test_zoneinfo test/test_zoneinfo/data \
 		test/ziptestdata \
 		asyncio \
 		test/test_asyncio \
@@ -1399,12 +1470,14 @@ LIBSUBDIRS=	tkinter tkinter/test tkinter/test/test_tkinter \
 		ctypes ctypes/test ctypes/macholib \
 		idlelib idlelib/Icons idlelib/idle_test \
 		distutils distutils/command distutils/tests $(XMLLIBSUBDIRS) \
+		test/test_peg_generator \
 		test/test_tools test/test_warnings test/test_warnings/data \
 		turtledemo \
 		multiprocessing multiprocessing/dummy \
 		unittest unittest/test unittest/test/testmock \
 		venv venv/scripts venv/scripts/common venv/scripts/posix \
-		curses pydoc_data
+		curses pydoc_data \
+		zoneinfo
 libinstall:	build_all $(srcdir)/Modules/xxmodule.c
 	@for i in $(SCRIPTDIR) $(LIBDEST); \
 	do \
@@ -1447,6 +1520,7 @@ libinstall:	build_all $(srcdir)/Modules/xxmodule.c
 			*CVS) ;; \
 			*.py[co]) ;; \
 			*.orig) ;; \
+			*wininst-*.exe) ;; \
 			*~) ;; \
 			*) \
 				if test -d $$i; then continue; fi; \
@@ -1555,7 +1629,7 @@ inclinstall:
 
 # Install the library and miscellaneous stuff needed for extending/embedding
 # This goes into $(exec_prefix)
-LIBPL=		$(prefix)/lib/python3.8/config-$(VERSION)$(ABIFLAGS)-darwin
+LIBPL=		$(prefix)/lib/python3.9/config-$(VERSION)$(ABIFLAGS)-darwin
 
 # pkgconfig directory
 LIBPC=		$(LIBDIR)/pkgconfig
@@ -1765,10 +1839,13 @@ docclean:
 	-rm -rf Doc/build
 	-rm -rf Doc/tools/sphinx Doc/tools/pygments Doc/tools/docutils
 
-clean: pycremoval
+# like the 'clean' target but retain the profile guided optimization (PGO)
+# data.  The PGO data is only valid if source code remains unchanged.
+clean-retain-profile: pycremoval
 	find . -name '*.[oa]' -exec rm -f {} ';'
 	find . -name '*.s[ol]' -exec rm -f {} ';'
 	find . -name '*.so.[0-9]*.[0-9]*' -exec rm -f {} ';'
+	find . -name '*.lst' -exec rm -f {} ';'
 	find build -name 'fficonfig.h' -exec rm -f {} ';' || true
 	find build -name '*.py' -exec rm -f {} ';' || true
 	find build -name '*.py[co]' -exec rm -f {} ';' || true
@@ -1787,14 +1864,19 @@ profile-removal:
 	rm -rf $(COVERAGE_REPORT)
 	rm -f profile-run-stamp
 
-clobber: clean profile-removal
+clean: clean-retain-profile
+	@if test build_all = profile-opt; then \
+		rm -f profile-gen-stamp profile-clean-stamp; \
+		$(MAKE) profile-removal; \
+	fi
+
+clobber: clean
 	-rm -f $(BUILDPYTHON) $(LIBRARY) $(LDLIBRARY) $(DLLLIBRARY) \
 		tags TAGS \
 		config.cache config.log pyconfig.h Modules/config.c
 	-rm -rf build platform
 	-rm -rf $(PYTHONFRAMEWORKDIR)
 	-rm -f python-config.py python-config
-	-rm -f profile-gen-stamp profile-clean-stamp
 
 # Make things extra clean, before making a distribution:
 # remove all generated files, even Makefile[.pre]
@@ -1868,6 +1950,8 @@ Python/thread.o:  $(srcdir)/Python/thread_nt.h $(srcdir)/Python/thread_pthread.h
 .PHONY: frameworkinstallmaclib frameworkinstallapps frameworkinstallunixtools
 .PHONY: frameworkaltinstallunixtools recheck clean clobber distclean
 .PHONY: smelly funny patchcheck touch altmaninstall commoninstall
+.PHONY: clean-retain-profile profile-removal run_profile_task
+.PHONY: build_all_generate_profile build_all_merge_profile
 .PHONY: gdbhooks
 
 # IF YOU PUT ANYTHING HERE IT WILL GO AWAY
@@ -2035,8 +2119,9 @@ Modules/_io$(EXT_SUFFIX):  Modules/_iomodule.o Modules/iobase.o Modules/fileio.o
 Modules/faulthandler.o: $(srcdir)/Modules/faulthandler.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/faulthandler.c -o Modules/faulthandler.o
 Modules/faulthandler$(EXT_SUFFIX):  Modules/faulthandler.o; $(BLDSHARED)  Modules/faulthandler.o   -o Modules/faulthandler$(EXT_SUFFIX)
 Modules/_tracemalloc.o: $(srcdir)/Modules/_tracemalloc.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/_tracemalloc.c -o Modules/_tracemalloc.o
-Modules/hashtable.o: $(srcdir)/Modules/hashtable.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/hashtable.c -o Modules/hashtable.o
-Modules/_tracemalloc$(EXT_SUFFIX):  Modules/_tracemalloc.o Modules/hashtable.o; $(BLDSHARED)  Modules/_tracemalloc.o Modules/hashtable.o   -o Modules/_tracemalloc$(EXT_SUFFIX)
+Modules/_tracemalloc$(EXT_SUFFIX):  Modules/_tracemalloc.o; $(BLDSHARED)  Modules/_tracemalloc.o   -o Modules/_tracemalloc$(EXT_SUFFIX)
+Modules/_peg_parser.o: $(srcdir)/Modules/_peg_parser.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/_peg_parser.c -o Modules/_peg_parser.o
+Modules/_peg_parser$(EXT_SUFFIX):  Modules/_peg_parser.o; $(BLDSHARED)  Modules/_peg_parser.o   -o Modules/_peg_parser$(EXT_SUFFIX)
 Modules/symtablemodule.o: $(srcdir)/Modules/symtablemodule.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/symtablemodule.c -o Modules/symtablemodule.o
 Modules/_symtable$(EXT_SUFFIX):  Modules/symtablemodule.o; $(BLDSHARED)  Modules/symtablemodule.o   -o Modules/_symtable$(EXT_SUFFIX)
 Modules/xxsubtype.o: $(srcdir)/Modules/xxsubtype.c; $(CC) $(PY_BUILTIN_MODULE_CFLAGS)  -c $(srcdir)/Modules/xxsubtype.c -o Modules/xxsubtype.o

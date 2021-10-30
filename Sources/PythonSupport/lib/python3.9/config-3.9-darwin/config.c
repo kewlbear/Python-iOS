@@ -94,6 +94,7 @@ extern PyObject* PyInit__locale(void);
 extern PyObject* PyInit__io(void);
 extern PyObject* PyInit_faulthandler(void);
 extern PyObject* PyInit__tracemalloc(void);
+extern PyObject* PyInit__peg_parser(void);
 extern PyObject* PyInit__symtable(void);
 extern PyObject* PyInit_xxsubtype(void);
 /* -- ADDMODULE MARKER 1 -- */
@@ -178,6 +179,7 @@ struct _inittab _PyImport_Inittab[] = {
 {"_io", PyInit__io},
 {"faulthandler", PyInit_faulthandler},
 {"_tracemalloc", PyInit__tracemalloc},
+{"_peg_parser", PyInit__peg_parser},
 {"_symtable", PyInit__symtable},
 {"xxsubtype", PyInit_xxsubtype},
 /* -- ADDMODULE MARKER 2 -- */
