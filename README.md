@@ -2,6 +2,8 @@
 
 This swift package enables you to use python modules in your iOS apps.
 
+Please see https://github.com/kewlbear/Python-iOS/tree/kivy-ios and https://github.com/kewlbear/YoutubeDL for more recent version and example.
+
 ## Installation
 
 ```
