@@ -13,6 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: python --version
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - run: python --version
     - run: sh Scripts/ci.sh
       id: script
     - name: Commit
