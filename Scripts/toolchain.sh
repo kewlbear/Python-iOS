@@ -5,7 +5,7 @@ python3 -m venv venv
 . venv/bin/activate
 
 pip install -e .
-pip install cython
+pip install cython==0.29.33
 
 python toolchain.py build python3
 
