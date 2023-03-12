@@ -15,10 +15,10 @@ let package = Package(
             ]),
     ],
     targets: [
-        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.0-2023.03.11-06.34.34/libpython3.xcframework.zip", checksum: "4633f6d794cc8e4e104e1f0defdafbd24e1cc797e1cacb4b477eb3f578b2b558"),
-        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.0-2023.03.11-06.34.34/libssl.xcframework.zip", checksum: "49d770d18457dcd9ef3be14f563ee495626ff933ac9fd55f86b69f52965f58bf"),
-        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.0-2023.03.11-06.34.34/libcrypto.xcframework.zip", checksum: "c7a44f659553ad6f79a293cb62fb1771271786a6ba732db62b954279e83d1c95"),
-        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.0-2023.03.11-06.34.34/libffi.xcframework.zip", checksum: "77a6078d3845ce916e512e4bf70c7c78101834ccf74e4c47b8afd1c3d6345a0b"),
+        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libpython3.xcframework.zip", checksum: "d8cc3fd6fa8d423472db262cdf8cc7dbf37905092214b1b4a60bdfe60e157117"),
+        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libssl.xcframework.zip", checksum: "4fe35fe5cb115af686f1917e2e794a29cdd80b79b23cc1acd08bb20745db3e70"),
+        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libcrypto.xcframework.zip", checksum: "53c404fb8bb312d7d0ff8b0d3b68869aa66b03e5008f326aad814401eac870ac"),
+        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libffi.xcframework.zip", checksum: "0704567c97647f211be5cb4e527c8408e82f0266153ca5ba667f74757f983c01"),
         .target(name: "LinkPython",
                 dependencies: [
                     "libpython3",
