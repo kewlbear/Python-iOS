@@ -15,10 +15,10 @@ let package = Package(
             ]),
     ],
     targets: [
-        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libpython3.xcframework.zip", checksum: "d8cc3fd6fa8d423472db262cdf8cc7dbf37905092214b1b4a60bdfe60e157117"),
-        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libssl.xcframework.zip", checksum: "4fe35fe5cb115af686f1917e2e794a29cdd80b79b23cc1acd08bb20745db3e70"),
-        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libcrypto.xcframework.zip", checksum: "53c404fb8bb312d7d0ff8b0d3b68869aa66b03e5008f326aad814401eac870ac"),
-        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230312-012746/libffi.xcframework.zip", checksum: "0704567c97647f211be5cb4e527c8408e82f0266153ca5ba667f74757f983c01"),
+        .binaryTarget(name: "libpython3", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230423-043815/libpython3.xcframework.zip", checksum: "ee37b19e3dd8ddaa869f09aab0fe5c0514b3d051b9bdf68d94c154e897e1982d"),
+        .binaryTarget(name: "libssl", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230423-043815/libssl.xcframework.zip", checksum: "408a9b94c0bbbb4358838bd34e15799f12dece74dd21b8a60561887fb9dfc9d8"),
+        .binaryTarget(name: "libcrypto", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230423-043815/libcrypto.xcframework.zip", checksum: "c4ece329762cc90abe087eb192be2132619322b1ef760ebdcabbe2bfbcedd367"),
+        .binaryTarget(name: "libffi", url: "https://github.com/kewlbear/Python-iOS/releases/download/v0.1.1-b20230423-043815/libffi.xcframework.zip", checksum: "cbc29901d9bba4ccc6813d7bc6719ab4d4fbe3b5dde8d7f599d544ddb14eac42"),
         .target(name: "LinkPython",
                 dependencies: [
                     "libpython3",
